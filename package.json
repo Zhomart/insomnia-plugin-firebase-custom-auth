@@ -2,6 +2,8 @@
   "name": "insomnia-plugin-firebase-custom-auth",
   "version": "0.0.1",
   "author": "Zhomart Mukhamejanov <mzhomart@gmail.com>",
+  "homepage": "https://github.com/Zhomart/insomnia-plugin-firebase-custom-auth",
+  "repository": "github:Zhomart/insomnia-plugin-firebase-custom-auth",
   "insomnia": {
     "name": "firebase-custom-auth",
     "description": "Authenticates to custom backend and Firebase, then retrieves idToken"
