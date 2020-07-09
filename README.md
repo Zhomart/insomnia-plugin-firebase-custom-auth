@@ -2,18 +2,30 @@
 
 Read https://firebase.google.com/docs/auth/web/custom-auth for context.
 
-This is a plugin for the [Insomnia REST client](https://insomnia.rest/) to retrieve 
+This is a plugin for the [Insomnia REST client](https://insomnia.rest/) to retrieve
 [idToken](https://firebase.google.com/docs/auth/users#auth_tokens) from Firebase. Firebase
-requires first acquiring 
-[custom token](https://firebase.google.com/docs/auth/admin/create-custom-tokens) and uses it 
+requires first acquiring
+[custom token](https://firebase.google.com/docs/auth/admin/create-custom-tokens) and uses it
 to generate `idToken`.
 
 ## Usage
 
-Create a login request to your custom authentication service. Set header 
-`X-Insomnia-Firebase-Custom-Token-Path` to [dot-notation](https://lodash.com/docs/4.17.15#get) 
-path to the __Firebase Custom Token__. The plugin automatically stores it and uses it to
+Create a login request to your custom authentication service. Set header
+`X-Insomnia-Firebase-Custom-Token-Path` to [dot-notation](https://lodash.com/docs/4.17.15#get)
+path to the __Firebase Custom Token__ in the response. The plugin automatically stores it and uses it to
 retrieve `idToken`.
+
+If login response is
+
+```json
+{
+    "myData": {
+        "customToken": "<jwt custom tokem>"
+    }
+}
+```
+
+Use `myData.customToken`.
 
 ![loginAndGetCustomToken.png](https://raw.githubusercontent.com/Zhomart/insomnia-plugin-firebase-custom-auth/master/screenshots/loginAndGetCustomToken.png)
 
