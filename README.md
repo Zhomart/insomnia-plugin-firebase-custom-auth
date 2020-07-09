@@ -15,25 +15,25 @@ Create a login request to your custom authentication service. Set header
 path to the __Firebase Custom Token__. The plugin automatically stores it and uses it to
 retrieve `idToken`.
 
-![loginAndGetCustomToken.png](https://raw.githubusercontent.com/Zhomart/insomnia-plugin-firebase-custom-auth/master/screenshot/loginAndGetCustomToken.png)
+![loginAndGetCustomToken.png](https://raw.githubusercontent.com/Zhomart/insomnia-plugin-firebase-custom-auth/master/screenshots/loginAndGetCustomToken.png)
 
 In environment settings (CTRL+e/CMD+e), create an environment variable and set the value
 to the `Firebase idToken` tag (CTRL+SPACE to find the tag).
 
-![createIdTokenTag.png.png](https://raw.githubusercontent.com/Zhomart/insomnia-plugin-firebase-custom-auth/master/screenshot/createIdTokenTag.png.png)
+![createIdTokenTag.png.png](https://raw.githubusercontent.com/Zhomart/insomnia-plugin-firebase-custom-auth/master/screenshots/createIdTokenTag.png.png)
 
 Configure the `Firebase idToken` tag. Set `customTokenOrEmptyToUseStored` only if you
 want to override the stored custom token. It automatically gets `idToken` from Firebase and caches it.
 
-![configuringIdTokenTag.png](https://raw.githubusercontent.com/Zhomart/insomnia-plugin-firebase-custom-auth/master/screenshot/configuringIdTokenTag.png)
+![configuringIdTokenTag.png](https://raw.githubusercontent.com/Zhomart/insomnia-plugin-firebase-custom-auth/master/screenshots/configuringIdTokenTag.png)
 
 Use the `idToken` in your requests.
 
-![useIdToken.png](https://raw.githubusercontent.com/Zhomart/insomnia-plugin-firebase-custom-auth/master/screenshot/useIdToken.png)
+![useIdToken.png](https://raw.githubusercontent.com/Zhomart/insomnia-plugin-firebase-custom-auth/master/screenshots/useIdToken.png)
 
 Click on `Reset Firebase Custom Token` to remove stored __custom token__ and __idToken__.
 
-![resetTokens.png](https://raw.githubusercontent.com/Zhomart/insomnia-plugin-firebase-custom-auth/master/screenshot/resetTokens.png)
+![resetTokens.png](https://raw.githubusercontent.com/Zhomart/insomnia-plugin-firebase-custom-auth/master/screenshots/resetTokens.png)
 
 
 # License
