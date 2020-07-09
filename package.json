@@ -1,0 +1,15 @@
+{
+  "name": "insomnia-plugin-firebase-custom-auth",
+  "version": "0.0.1",
+  "private": true,
+  "insomnia": {
+    "name": "firebase-custom-auth",
+    "description": "Authenticates to custom backend and Firebase, then retrieves idToken"
+  },
+  "main": "main.js",
+  "dependencies": {
+    "nanoajax": "0.4.3",
+    "lodash": "4.17.15",
+    "jwt-decode": "2.2.0"
+  }
+}
