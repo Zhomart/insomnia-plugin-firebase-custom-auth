@@ -20,7 +20,7 @@ retrieve `idToken`.
 In environment settings (CTRL+e/CMD+e), create an environment variable and set the value
 to the `Firebase idToken` tag (CTRL+SPACE to find the tag).
 
-![createIdTokenTag.png.png](https://raw.githubusercontent.com/Zhomart/insomnia-plugin-firebase-custom-auth/master/screenshots/createIdTokenTag.png.png)
+![createIdTokenTag.png](https://raw.githubusercontent.com/Zhomart/insomnia-plugin-firebase-custom-auth/master/screenshots/createIdTokenTag.png)
 
 Configure the `Firebase idToken` tag. Set `customTokenOrEmptyToUseStored` only if you
 want to override the stored custom token. It automatically gets `idToken` from Firebase and caches it.
