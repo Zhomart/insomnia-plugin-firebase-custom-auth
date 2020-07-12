@@ -1,6 +1,6 @@
 {
   "name": "insomnia-plugin-firebase-custom-auth",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Zhomart Mukhamejanov <mzhomart@gmail.com>",
   "homepage": "https://github.com/Zhomart/insomnia-plugin-firebase-custom-auth",
   "repository": "github:Zhomart/insomnia-plugin-firebase-custom-auth",
