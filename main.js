@@ -101,6 +101,7 @@ module.exports.responseHooks = [
       }
       console.dir("Storing the custom token (it has 1 hour lifetime)");
       await context.store.setItem(STORE_CUSTOM_TOKEN_KEY, customToken);
+      await context.store.removeItem(STORE_ID_TOKEN_KEY);
     } catch (error) {
       console.warn("Failed to decode custom token JWT", error);
     }
